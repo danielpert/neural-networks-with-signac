@@ -14,6 +14,7 @@ The hidden_layer_sizes parameter in the MLPRegressor gives the number of hidden 
 The MLPRegressor models for both target variables and for each job are stored in PICKLE files, but since there are a large number of these and they take up a lot of space, `project.py` saves the PICKLE files along with the other files in each job's workspace in an external hard drive instead of locally. All of the other files in the job workspace are saved locally. Before running `project.py`, make sure you have plugged in and turned on an external hard drive 'D' and mounted it at /mnt/d:
 
 `sudo mkdir /mnt/d`
+
 `sudo mount -t drvfs D: /mnt/d`
 
 make sure that the directory structure `/mnt/d/neural-networks-with-signac/workspace` exists in the D: drive.
