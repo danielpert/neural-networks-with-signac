@@ -26,3 +26,7 @@ And unmount after you are finished saving the files:
 Inside each job document, the r^2, root mean square error, and mean absolute error are calculated on both the train and the test data for the COF and intercept models.
 
 The analysis.ipynb notebook is used to analyze the results and make plots.
+
+NOTE: The job workspaces, which include the job statepoints, job documents, MLPRegressor objects in PICKLE format, MinMaxScaler objects (which are needed to normalize the feature values into a form that can be input into the models, see https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html) in PICKLE format, and lists of molecular descriptors included as features in the models, are not included in this repo because they would take up too much space. However, they are available here as a ZIP file:
+
+https://drive.google.com/file/d/1X7HclBgftUP0FasV-9BfdiHALvPoUtaD/view?usp=sharing
